@@ -50,8 +50,8 @@ function Control() {
     };
   }, [moroso]);
   return (
-    <>
-      <div className="flex flex-col items-center rounded-md m-8 p-5 w-5/6 max-w-md bg-white shadow-xl ">
+    <div className="h-screen flex justify-center items-center pt-10 back_gradient">
+      <div className="flex flex-col justify-center items-center rounded-md m-8 p-5 w-5/6 max-w-md bg-white shadow-xl ">
         <h1 className="text-2xl font-bold text-blue-500">Control de ingreso</h1>
         <form
           action=""
@@ -106,7 +106,7 @@ function Control() {
           )}
           <button
             type="submit"
-            className="border-0 p-2 rounded-lg my-5 self-center bg-blue-500 text-white shadow-lg"
+            className="border-0 p-2 rounded-lg my-5 self-center bg-blue-500 hover:bg-blue-700 ease-in-out duration-150 text-white shadow-lg"
           >
             Registrar
           </button>
@@ -137,7 +137,7 @@ function Control() {
           )}
         </AnimatePresence>
       </div>
-    </>
+    </div>
   );
 }
 

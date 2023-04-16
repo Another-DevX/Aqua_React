@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
+const button_style = "hover:bg-blue-700 ease-in-out duration-150 bg-blue-500 p-2 text-white rounded-md shadow-lg text-sm"
+
 function Mantenimiento() {
   const [cantAgua, setCantAgua] = useState(200);
   const [muestra, setMuestra] = useState(false);
@@ -13,7 +15,7 @@ function Mantenimiento() {
     }
 
   return (
-    <>
+    <div className="h-screen flex justify-center items-center pt-10 back_gradient">
       <div className="flex flex-col items-center rounded-md m-8 p-5 w-5/6 max-w-md gap-2 bg-white shadow-xl ">
         <h1 className="text-2xl font-bold text-blue-500">Mantenimiento</h1>
         <p>{cantAgua} lts</p>
@@ -22,31 +24,31 @@ function Mantenimiento() {
           <div className="flex flex-row gap-2">
             <button
               onClick={() => setMuestra(true)}
-              className="bg-blue-500 p-2 text-white rounded-md shadow-lg text-sm"
+              className={button_style}
             >
               Muestra 1
             </button>
             <button
               onClick={() => setMuestra(true)}
-              className="bg-blue-500 p-2 text-white rounded-md shadow-lg text-sm"
+              className={button_style}
             >
               Muestra 2
             </button>
             <button
               onClick={() => setMuestra(true)}
-              className="bg-blue-500 p-2 text-white rounded-md shadow-lg text-sm"
+              className={button_style}
             >
               Muestra 3
             </button>
           </div>
           <button
           onClick={()=>alert("Aun no se encuentra disponible")}
-          className="bg-blue-500 p-2 text-white rounded-md shadow-lg text-sm">
+          className={button_style}>
             Observaciones
           </button>
           <button
           onClick={()=>navigate("/mantenimiento")}
-          className="bg-blue-500 p-2 text-white rounded-md shadow-lg text-sm">
+          className={button_style}>
             Acciones de mantenimiento basico
           </button>
         </div>
@@ -115,7 +117,7 @@ function Mantenimiento() {
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 }
 export { Mantenimiento };

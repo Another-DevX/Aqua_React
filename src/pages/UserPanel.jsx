@@ -2,14 +2,16 @@ import React from "react";
 import { Navbar } from "../components/Navbar";
 import { Control } from "../components/Control";
 import { Mantenimiento } from "../components/Mantenimiento";
+import Mosaic from "../components/Mosaic";
+import { Route, Routes } from "react-router";
 
 function UserPanel() {
   return (
     <div className="back_gradient min-h-screen">
-      <Navbar />
-      <div className="flex flex-col  items-center  w-full pt-20 lg:flex-row lg:h-screen lg:justify-center">
-        <Control />
-        <Mantenimiento />
+      <div className="h-screen w-full flex justify-center pt-20 items-center">
+        <Mosaic/>
+        {/* <Control /> */}
+        {/* <Mantenimiento /> */}
       </div>
     </div>
   );
