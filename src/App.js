@@ -6,6 +6,8 @@ import { Calculadoras } from "./pages/Calculadoras";
 import { Control } from "./components/Control";
 import { Navbar } from "./components/Navbar";
 import { Mantenimiento } from "./components/Mantenimiento";
+import Bitacora from "./components/Bitacora";
+import Utilidades from "./components/Utilidades";
 
 
 
@@ -19,8 +21,8 @@ function App() {
           <Route path="/panel" element={<UserPanel />} />
           <Route path="/panel/control-usuario" element={<Control/>}/>
           <Route path="/panel/mantenimiento" element={<Mantenimiento/>}/>
-          <Route path="/panel/utilidades"/>
-          <Route path="/panel/bitacoras" />
+          <Route path="/panel/utilidades" element={<Utilidades/>}/>
+          <Route path="/panel/bitacora" element={<Bitacora/>} />
           <Route path="/mantenimiento" element={<PanelDeMantenimiento />} />
           <Route path="/calcular" element={<Calculadoras/>}></Route>
         </Routes>

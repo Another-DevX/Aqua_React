@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800&display=swap");
 
 @layer components {
   html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   .back_gradient {
-    background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, 1) 0%, rgba(95, 209, 249, 1) 100.2%);
+    background-image: radial-gradient(
+      circle farthest-corner at 12.3% 19.3%,
+      rgba(85, 88, 218, 1) 0%,
+      rgba(95, 209, 249, 1) 100.2%
+    );
   }
 
   .title_font {
-    font-family: 'Phudu', cursive;
+    font-family: "Phudu", cursive;
   }
 
   .animation {
@@ -24,6 +27,24 @@
     color: #ffffff00;
     background-size: 600% 600%;
     animation: moveGradient 5s ease infinite;
+  }
+
+  .dropdown-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .item {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .item:hover {
+    background-color: #f7f7f7;
+  }
+
+  .selected {
+    background-color: #e5f5ff;
   }
 
   @keyframes moveGradient {
@@ -38,21 +59,26 @@
     100% {
       background-position: 0% 50%;
     }
-
   }
 
   .ModalBackground {
     background: rgba(0, 0, 0, 0.493);
+  }
+  .ModalBackground--global {
     position: fixed;
     top: -10px;
     left: -10px;
     right: -10px;
     bottom: -10px;
+    background: rgba(0, 0, 0, 0.493);
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: 99;
-
   }
 }
+
+/* .accordion{ */
+/* z-index: -1 !important; */
+/* } */

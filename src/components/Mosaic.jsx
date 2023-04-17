@@ -13,10 +13,10 @@ export default function Mosaic() {
         <a href="/panel/mantenimiento" className={a__styles}>
           Mantenimiento
         </a>
-        <a href="#" className={a__styles}>
+        <a href="/panel/utilidades" className={a__styles}>
           Utilidades
         </a>
-        <a href="#" className={a__styles}>
+        <a href="/panel/bitacora" className={a__styles}>
           Bitacora
         </a>
       </div>
