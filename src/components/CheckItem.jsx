@@ -25,7 +25,7 @@ function CheckItem({ item }) {
   return (
     <>
       {checked ? (
-        <li className="flex gap-5 p-4 rounded-lg items-center bg-gray-400 shadow-lg font-bold">
+        <li className="flex gap-5 p-4 rounded-lg items-center bg-gray-300 shadow-md cursor-pointer font-bold">
           <span onClick={handleOnTogleCheck}>
             <FiCheck className="text-green-600 text-2xl" />
           </span>
@@ -33,11 +33,11 @@ function CheckItem({ item }) {
         </li>
       ) : (
         <>
-          <li className="flex gap-5 p-4 rounded-lg items-center bg-gray-200 shadow-lg font-bold">
+          <li className="flex gap-2 lg:gap-5 p-4 rounded-lg items-center bg-gray-50 shadow-md cursor-pointer font-bold">
             <span onClick={handleOnTogleCheck}>
               <FiCheck className="text-2xl" />
             </span>
-            <p onClick={handleOnTogleModal} className=" h-full text">{item.title}</p>
+            <p onClick={handleOnTogleModal} className=" cursor-pointer h-full text">{item.title}</p>
           </li>
           <ModalItem link = {item.link} text = {item.text} func = {item.func} isOpen={openModal} />
         </>

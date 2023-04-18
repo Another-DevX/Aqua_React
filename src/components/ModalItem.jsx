@@ -12,7 +12,7 @@ function ModalItem({isOpen, text, func, link, setIsOpen}){
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="ModalBackground"
+              className="ModalBackground--color"
             >
               <motion.div
                 initial={{ scale: "0%" }}
@@ -36,7 +36,7 @@ function ModalItem({isOpen, text, func, link, setIsOpen}){
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="ModalBackground"
+              className="ModalBackground--global"
             >
               <motion.div
                 initial={{ scale: "0%" }}
@@ -45,7 +45,7 @@ function ModalItem({isOpen, text, func, link, setIsOpen}){
                 className="flex flex-col items-center m-10 p-5 rounded-lg text-black bg-white"
               >
                 <h1 className="text-lg font-bold">Instrucciones.</h1>
-                <p>{text}</p>
+                <p className="max-h-96 max-w-xl overflow-auto"  dangerouslySetInnerHTML={{__html: text.replace(/\n/g, "<br>")}}></p>
               </motion.div>
             </motion.div>
           </>

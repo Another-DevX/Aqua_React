@@ -9,13 +9,13 @@ export default function Utilidades() {
           <Accordion.Header>Calculadoras</Accordion.Header>
           <Accordion.Body>
             <div className="flex flex-col justify-evenly w-full text-center gap-2">
-              <button className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
+              <a href="/calcular" className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
                 PH
-              </button>
-              <button className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
+              </a>
+              <button onClick={()=>alert("Aun no esta disponible")} className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
                 Litros de agua piscina
               </button>
-              <button className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
+              <button onClick={()=>alert("Aun no esta disponible")} className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
                 Cloro
               </button>
             </div>
@@ -25,9 +25,9 @@ export default function Utilidades() {
           <Accordion.Header>Historiales</Accordion.Header>
           <Accordion.Body>
             <div className="flex flex-col justify-evenly w-full text-center gap-2">
-              <button className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
+              <a href="/panel/utilidades/historial/usuarios" className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
                 Control de usuarios
-              </button>
+              </a>
               <button className="p-2 rounded-md text-white bg-blue-400 hover:bg-blue-600">
                 Bitacoras
               </button>

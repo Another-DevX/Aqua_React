@@ -11,7 +11,7 @@ function ModalCalc({ isOpen, text, setIsOpen }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="ModalBackground"
+            className="ModalBackground--global"
           >
             <motion.div
               initial={{ scale: "0%" }}
@@ -19,7 +19,7 @@ function ModalCalc({ isOpen, text, setIsOpen }) {
               exit={{ scale: "0%" }}
               className="flex flex-col items-center m-10 p-5 rounded-lg text-black bg-white"
             >
-                <span onClick={()=>setIsOpen(false)} className="absolute top-4 right-4" >X</span>
+                <span onClick={()=>setIsOpen(false)} className="absolute cursor-pointer font-bold top-4 right-4" >x</span>
               <h1 className="text-lg font-bold">Instrucciones</h1>
               {text}
             </motion.div>

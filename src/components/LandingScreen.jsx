@@ -7,7 +7,7 @@ function LandingScreen(){
     return (
       <div className="flex flex-col items-center  justify-center h-screen lg:items-start ">
         <div className="flex flex-col gap-10 mx-10 lg:mx-20">
-          <aside className="flex flex-col gap-5">
+          <aside className="flex flex-col gap-2">
             <h2 className="text-2xl title_font sm:text-3xl">
               Todo <br /> es mas facil con
             </h2>

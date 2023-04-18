@@ -58,7 +58,7 @@ function Calculadoras() {
 
                     <span
                       onClick={() => setModal1(true)}
-                      className="h-full flex items-center justify-center p-2 "
+                      className="cursor-pointer h-full flex items-center justify-center p-2 "
                     >
                       ?
                     </span>
@@ -74,7 +74,7 @@ function Calculadoras() {
                     />
                     <span
                       onClick={() => setModal2(true)}
-                      className="h-full flex items-center justify-center p-2 "
+                      className="cursor-pointer h-full flex items-center justify-center p-2 "
                     >
                       ?
                     </span>
@@ -90,7 +90,7 @@ function Calculadoras() {
                     />
                     <span
                       onClick={() => setModal3(true)}
-                      className="h-full flex items-center justify-center p-2 "
+                      className="cursor-pointer h-full flex items-center justify-center p-2 "
                     >
                       ?
                     </span>
@@ -106,7 +106,7 @@ function Calculadoras() {
                     />
                     <span
                       onClick={() => setModal4(true)}
-                      className="h-full flex items-center justify-center p-2 "
+                      className="cursor-pointer h-full flex cur items-center justify-center p-2 "
                     >
                       ?
                     </span>
