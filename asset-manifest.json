@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Aqua_React/static/css/main.9313798f.css",
-    "main.js": "/Aqua_React/static/js/main.38dd4067.js",
+    "main.css": "/Aqua_React/static/css/main.2f9bc997.css",
+    "main.js": "/Aqua_React/static/js/main.0c3f6fc0.js",
     "static/js/787.5858d9ad.chunk.js": "/Aqua_React/static/js/787.5858d9ad.chunk.js",
     "index.html": "/Aqua_React/index.html",
-    "main.9313798f.css.map": "/Aqua_React/static/css/main.9313798f.css.map",
-    "main.38dd4067.js.map": "/Aqua_React/static/js/main.38dd4067.js.map",
+    "main.2f9bc997.css.map": "/Aqua_React/static/css/main.2f9bc997.css.map",
+    "main.0c3f6fc0.js.map": "/Aqua_React/static/js/main.0c3f6fc0.js.map",
     "787.5858d9ad.chunk.js.map": "/Aqua_React/static/js/787.5858d9ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9313798f.css",
-    "static/js/main.38dd4067.js"
+    "static/css/main.2f9bc997.css",
+    "static/js/main.0c3f6fc0.js"
   ]
 }
